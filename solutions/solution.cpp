@@ -1,10 +1,9 @@
 #include <vector>
 using namespace std;
+
 class Solution {
   public:
       vector<int> findDisappearedNumbers(vector<int>& nums) {
-          
-         
-        return nums;
+          return nums; // Ensure return is always executed
       }
-  };
+};
