@@ -28,6 +28,7 @@
 //     }
 //   }
 // }
+package tests;
 
 import java.util.*;
 import solutions.Solution;
