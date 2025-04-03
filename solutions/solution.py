@@ -4,7 +4,7 @@ class Solution:
         n = len(nums)
         result = []
         
-        # Check for missing numbers in range [1, n]
+        # Checking for missing numbers in range [1, n]
         for i in range(1, n + 1):
             if i not in num_set:
                 result.append(i)
