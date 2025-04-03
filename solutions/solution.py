@@ -1,6 +1,6 @@
-class Solution(object):
+class Solution:
     def findDisappearedNumbers(self, nums):
-         num_set = set(nums)
+        num_set = set(nums)
         n = len(nums)
         result = []
         
