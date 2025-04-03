@@ -33,7 +33,7 @@ public class Solution {
     return result;
   }
 
-  // Main method for testing
+  // Main method for testing//
   public static void main(String[] args) {
     Solution sol = new Solution();
     int[] nums = { 4, 3, 2, 7, 8, 2, 3, 1 };
