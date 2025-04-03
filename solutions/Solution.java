@@ -6,8 +6,6 @@ package solutions; // Ensure this matches your package structure
 // public List<Integer> findDisappearedNumbers(int[] nums) {
 // return new ArrayList<>(); // Placeholder return statement
 // }
-// }
-///
 
 import java.util.*;
 
