@@ -368,12 +368,10 @@ jobs:
       - name: Compile and Run Java Tests
         if: env.LANGUAGE == 'Java'
         run: |
-          mkdir -p out
-          javac -d out $(find solutions tests -name "*.java")
-          echo "Listing compiled class files..."
-          find out -type f
+          javac -d . solutions/.java tests/.java
           echo "Running Java Test Cases..."
-          java -cp out tests.Test | tee test_results.log
+          java tests.Test | tee test_results.log
+
 
       - name: Compile and Run C Tests
         if: env.LANGUAGE == 'C'
