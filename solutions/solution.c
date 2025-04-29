@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int* findDisappearedNumbers(int* nums, int numsSize, int* returnSize) {
-  int temp = 0;
+  int temp = 0; 
     
     for (int index = 0; index < numsSize; ++index) {
         temp = abs(nums[index]) - 1;
