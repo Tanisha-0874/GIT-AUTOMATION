@@ -1,24 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h> 
-
 int* findDisappearedNumbers(int* nums, int numsSize, int* returnSize) {
-  int temp = 0; 
-    
+    int temp;
+
     for (int index = 0; index < numsSize; ++index) {
         temp = abs(nums[index]) - 1;
-        nums[temp] = abs(nums[temp]) * -1;
+        if (temp >= 0 && temp < numsSize)
+            nums[temp] = -abs(nums[temp]);
     }
-      
-    int insert_index = 0; 
 
-    *returnSize = 0;
+    int* result = (int*)malloc(numsSize * sizeof(int));
+    int insert_index = 0;
+
     for (int index = 0; index < numsSize; ++index) {
-        if (nums[index] > 0) {
-            ++*returnSize;
-            nums[insert_index++] = index + 1;
-        }
+        if (nums[index] > 0)
+            result[insert_index++] = index + 1;
     }
-    
-    return nums;
-  
+
+    *returnSize = insert_index;
+    return result;
 }
