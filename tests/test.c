@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../solutions/solution.c"; // Include your implementation file
+#include "../solutions/solution.c"// Include your implementation file
 
 // Function to print the array
 void printArray(int* arr, int size) {
