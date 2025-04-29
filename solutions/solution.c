@@ -8,7 +8,7 @@ int* findDisappearedNumbers(int* nums, int numsSize, int* returnSize) {
         temp = abs(nums[index]) - 1;
         nums[temp] = abs(nums[temp]) * -1;
     }
-     
+      
     int insert_index = 0;
 
     *returnSize = 0;
