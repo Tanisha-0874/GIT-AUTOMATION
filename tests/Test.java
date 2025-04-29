@@ -1,3 +1,6 @@
+package tests;
+
+import solutions.Solution;
 import java.util.*;
 
 public class Test {
