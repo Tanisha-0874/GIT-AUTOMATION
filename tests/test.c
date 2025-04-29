@@ -3,7 +3,6 @@
 #include <stdbool.h>
 #include "../solutions/solution.c"
 
-// Function to print arrays in the Python-style format
 void printArray(int* arr, int size) {
     printf("[");
     for (int i = 0; i < size; i++) {
@@ -13,7 +12,6 @@ void printArray(int* arr, int size) {
     printf("]");
 }
 
-// Function to compare two arrays
 bool arraysEqual(int* a, int sizeA, int* b, int sizeB) {
     if (sizeA != sizeB) return false;
     for (int i = 0; i < sizeA; i++) {
@@ -141,7 +139,7 @@ int main() {
     printf("\n%s\n\n", arraysEqual(result9, returnSize, expected9, 1) ? "✔ Passed" : "❌ Failed");
 
     // Test Case 10
-    int nums10[] = NULL;
+    int* nums10 = NULL;
     int* expected10 = NULL;
     int size10 = 0;
     int* result10 = findDisappearedNumbers(nums10, size10, &returnSize);
