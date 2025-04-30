@@ -1,7 +1,5 @@
 class Solution(object): 
     def findDisappearedNumbers(self, nums):
-       class Solution:
-    def findDisappearedNumbers(self, nums):
         num_set = set(nums)
         n = len(nums)
         result = []
@@ -12,5 +10,3 @@ class Solution(object):
                 result.append(i)
 
         return result
-
-
