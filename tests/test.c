@@ -61,5 +61,5 @@ int main() {
     int* result10 = findDisappearedNumbers(nums10, 0, &returnSize);
     printf("Test Case 10: %s\n", returnSize == 0 ? "Passed" : "Failed");
 
-    return 0;
+    return allPassed ? 0 : 1; 
 }
