@@ -97,8 +97,10 @@ jobs:
       - name: Run Python Tests
         if: env.LANGUAGE == 'Python'
         run: |
+          set -e
           echo "Running Python Test Cases..."
           python3 tests/test.py | tee test_results.log
+
 
       - name: Upload Test Results
         if: always()
