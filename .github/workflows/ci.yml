@@ -86,6 +86,8 @@ jobs:
           g++ tests/test.cpp -o test_runner_cpp
           echo "Running C++ Test Cases..."
           ./test_runner_cpp | tee test_results.log
+          exit_code=${PIPESTATUS[0]}
+          exit $exit_code
 
 
       - name: Run Python Tests
