@@ -14,6 +14,7 @@ public class Test {
 
   public static void main(String[] args) {
     Solution sol = new Solution();
+    boolean allPassed = true;
 
     // Define test cases as pairs of input and expected output
     List<Pair<int[], List<Integer>>> testCases = Arrays.asList(
@@ -33,6 +34,12 @@ public class Test {
       List<Integer> output = sol.findDisappearedNumbers(testCases.get(i).getKey());
       boolean passed = isEqual(output, testCases.get(i).getValue());
       System.out.println("Test Case " + (i + 1) + ": " + (passed ? "Passed" : "Failed"));
+      allPassed &= passed;
+    }
+
+    // Return non-zero exit status if any test failed
+    if (!allPassed) {
+      System.exit(1);
     }
   }
 }
