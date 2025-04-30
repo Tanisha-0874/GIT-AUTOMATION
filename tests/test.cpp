@@ -4,8 +4,9 @@
 
 using namespace std;
 
-#include "../solutions/solution.cpp"
+#include "../solutions/solution.cpp"  // Ensure this path is correct and accessible
 
+// Function to compare two vectors regardless of order
 bool isEqual(const vector<int>& a, const vector<int>& b) {
     vector<int> a_sorted = a;
     vector<int> b_sorted = b;
@@ -30,11 +31,14 @@ int main() {
         {{}, {}}
     };
 
+    bool allPassed = true;
+
     for (int i = 0; i < testCases.size(); ++i) {
         vector<int> output = sol.findDisappearedNumbers(testCases[i].first);
         bool passed = isEqual(output, testCases[i].second);
         cout << "Test Case " << (i + 1) << ": " << (passed ? "Passed" : "Failed") << endl;
+        if (!passed) allPassed = false;
     }
 
-    
+    return allPassed ? 0 : 1; // return 1 if any test fails
 }

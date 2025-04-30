@@ -82,9 +82,11 @@ jobs:
       - name: Compile and Run C++ Tests
         if: env.LANGUAGE == 'C++'
         run: |
+          set -e  # Exit immediately on any error
           g++ tests/test.cpp -o test_runner_cpp
           echo "Running C++ Test Cases..."
           ./test_runner_cpp | tee test_results.log
+
 
       - name: Run Python Tests
         if: env.LANGUAGE == 'Python'
