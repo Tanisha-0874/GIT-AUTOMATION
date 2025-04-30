@@ -36,5 +36,5 @@ int main() {
         cout << "Test Case " << (i + 1) << ": " << (passed ? "Passed" : "Failed") << endl;
     }
 
-    return 0;
+    
 }
