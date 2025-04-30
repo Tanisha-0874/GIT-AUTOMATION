@@ -2,7 +2,7 @@
 using namespace std;
 
           
-class Solution {
+class Solution {  
   public:
       vector<int> findDisappearedNumbers(vector<int>& nums) { 
         
