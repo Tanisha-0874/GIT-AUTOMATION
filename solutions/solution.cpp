@@ -4,7 +4,8 @@ using namespace std;
 
 class Solution {
   public:
-      vector<int> findDisappearedNumbers(vector<int>& nums) {
+      vector<int> findDisappearedNumbers(vector<int>& nums) { 
+        
             
       }
 };
