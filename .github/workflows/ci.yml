@@ -1,7 +1,7 @@
 
 name: Run Code Tests
 
-on:
+on:  
   push:
     paths:
       - "solutions/**"
